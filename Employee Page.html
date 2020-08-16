@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee Page...</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            *{
+                background-color: rgb(221, 221, 221);
+            } 
+            .column{
+                height: 310px;
+                background-color: white;
+                margin-left: 15px;
+            }
+            img{
+                margin-left: 100px;
+                margin-top: 15px;
+            }
+            h4{
+                font-weight: bolder;
+                color: black;
+                background-color: white;
+                word-spacing: 3px;
+            }
+            h5{
+                font-weight: lighter;
+                color: lightgray; 
+                background-color: white;
+            }
+            h6{
+                font-weight: bolder;
+                background-color: white;
+                word-spacing: 1.5px;
+            }
+            small{
+                font-weight: bold;
+                background-color: white;
+            }
+            .rain{
+                background-color: white;
+                margin-left: 20px;
+                margin-top: 7px;
+            }
+            strong,p{
+                background-color: white;
+            }
+            .rain2{
+                background-color: white;
+                margin-left: -30px;
+                margin-top: 7px;
+                padding-right: 10px;
+            }
+            .progress{
+                background-color: white;
+                width: 50px;
+                height: 50px;
+                color: white;
+            }
+            .row1{
+                margin-top: -20px;
+            }
+            .gone{
+                margin-left: 250px;
+            }
+            .row2 , .row3{
+                margin-top: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="table-hover" style="margin-top: 20px;background-color: rgb(221, 221, 221);">
+            <table class="table">
+                <tr style="margin-top: 20px;">
+                    <td style="padding-right: 300px;">
+                        <h5 style="float: left;font-size: larger; color: black;background-color: rgb(221, 221, 221);font-weight: bolder;margin-left: 238px;">Employee Attendance</h5>
+                    </td>
+                    
+                    <td style="float: right;word-spacing: 4px;padding-left: 300px;margin-left: -25px;">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar2-event-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M14 2H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"/>
+                            <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z"/>
+                            <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z"/>
+                            <rect width="2" height="2" x="11" y="7" rx=".5"/>
+                        </svg>    
+                            Today,May 26th.            
+                            <button type="button" class="btn btn-success" style="border-radius: 50px;">+ Employee</button>          
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-sort-up" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M3 13a.5.5 0 0 0 .5-.5v-10a.5.5 0 0 0-1 0v10a.5.5 0 0 0 .5.5z"/>
+                            <path fill-rule="evenodd" d="M5.354 4.854a.5.5 0 0 0 0-.708l-2-2a.5.5 0 0 0-.708 0l-2 2a.5.5 0 1 0 .708.708L3 3.207l1.646 1.647a.5.5 0 0 0 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 9a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
+                          </svg>
+                          sort
+                    </td>
+                </tr>
+            </table>
+         </div>   
+        <!--ROW 1 Begins-->
+        <div class="row row1 justify-content-between">
+            <div class="col-3 column gone">
+                <img src="picture.jpg" class="img-circle" alt="Cinque Terre" width="100px" height="100px">
+                <h4 class="text-center">David Phillips</h4>
+                <h5 class="text-center">Product Design</h5>
+                <h6 class="text-center">Visual Designer - #001</h6>
+                <div style="float: left;" class="rain">
+                    <small class="text-justify">Attendance</small>
+                    <br>
+                    <strong class="text-center" style="margin-left:20px;">88%</strong>
+                    <br>
+                    <p class="text-center">100 Days</p>
+                </div>
+                <div style="float: right;" class="rain2">
+                    <small class="text-justify" style="padding-right: 5px; margin-left: -5px;">Punctuality</small>
+                    <div class="progress">
+                        <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center" style="background-color:green;">
+                            <div class="h6 font-weight-bold" style="background-color:green;">95<sub class="small" style="background-color:green;color: white;">%</sub>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <div class="col-3 column">
+                <img src="picture.jpg" class="img-circle" alt="Cinque Terre" width="100px" height="100px">
+                <h4 class="text-center">David Phillips</h4>
+                <h5 class="text-center">Product Design</h5>
+                <h6 class="text-center">Visual Designer - #001</h6>
+                <div style="float: left;" class="rain">
+                    <small class="text-justify">Attendance</small>
+                    <br>
+                    <strong class="text-center" style="margin-left:20px;">88%</strong>
+                    <br>
+                    <p class="text-center">100 Days</p>
+                </div>
+                <div style="float: right;" class="rain2">
+                    <small class="text-justify" style="padding-right: 5px; margin-left: -5px;">Punctuality</small>
+                    <div class="progress">
+                        <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center" style="background-color:green;">
+                            <div class="h6 font-weight-bold" style="background-color:green;">95<sup class="small" style="background-color:green;color: white;">%</sup>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <div class="col-3 column">
+                <img src="picture.jpg" class="img-circle" alt="Cinque Terre" width="100px" height="100px">
+                <h4 class="text-center">David Phillips</h4>
+                <h5 class="text-center">Product Design</h5>
+                <h6 class="text-center">Visual Designer - #001</h6>
+                <div style="float: left;" class="rain">
+                    <small class="text-justify">Attendance</small>
+                    <br>
+                    <strong class="text-center" style="margin-left:20px;">88%</strong>
+                    <br>
+                    <p class="text-center">100 Days</p>
+                </div>
+                <div style="float: right;" class="rain2">
+                    <small class="text-justify" style="padding-right: 5px; margin-left: -5px;">Punctuality</small>
+                    <div class="progress">
+                        <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center" style="background-color:green;">
+                            <div class="h6 font-weight-bold" style="background-color:green;">95<sup class="small" style="background-color:green;color: white;">%</sup>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <!--ROW 1 Ends-->
+        <br>
+        <!--ROW 2 Begins-->    
+        <div class="row row2 justify-content-between">
+            <div class="col-3 column gone">
+                <img src="picture.jpg" class="img-circle" alt="Cinque Terre" width="100px" height="100px">
+                <h4 class="text-center">David Phillips</h4>
+                <h5 class="text-center">Product Design</h5>
+                <h6 class="text-center">Visual Designer - #001</h6>
+                <div style="float: left;" class="rain">
+                    <small class="text-justify">Attendance</small>
+                    <br>
+                    <strong class="text-center" style="margin-left:20px;">88%</strong>
+                    <br>
+                    <p class="text-center">100 Days</p>
+                </div>
+                <div style="float: right;" class="rain2">
+                    <small class="text-justify" style="padding-right: 5px; margin-left: -5px;">Punctuality</small>
+                    <div class="progress">
+                        <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center" style="background-color:green;">
+                            <div class="h6 font-weight-bold" style="background-color:green;">95<sup class="small" style="background-color:green;color: white;">%</sup>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <div class="col-3 column">
+                <img src="picture.jpg" class="img-circle" alt="Cinque Terre" width="100px" height="100px">
+                <h4 class="text-center">David Phillips</h4>
+                <h5 class="text-center">Product Design</h5>
+                <h6 class="text-center">Visual Designer - #001</h6>
+                <div style="float: left;" class="rain">
+                    <small class="text-justify">Attendance</small>
+                    <br>
+                    <strong class="text-center" style="margin-left:20px;">88%</strong>
+                    <br>
+                    <p class="text-center">100 Days</p>
+                </div>
+                <div style="float: right;" class="rain2">
+                    <small class="text-justify" style="padding-right: 5px; margin-left: -5px;">Punctuality</small>
+                    <div class="progress">
+                        <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center" style="background-color:green;">
+                            <div class="h6 font-weight-bold" style="background-color:green;">95<sup class="small" style="background-color:green;color: white;">%</sup>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <div class="col-3 column">
+                <img src="picture.jpg" class="img-circle" alt="Cinque Terre" width="100px" height="100px">
+                <h4 class="text-center">David Phillips</h4>
+                <h5 class="text-center">Product Design</h5>
+                <h6 class="text-center">Visual Designer - #001</h6>
+                <div style="float: left;" class="rain">
+                    <small class="text-justify">Attendance</small>
+                    <br>
+                    <strong class="text-center" style="margin-left:20px;">88%</strong>
+                    <br>
+                    <p class="text-center">100 Days</p>
+                </div>
+                <div style="float: right;" class="rain2">
+                    <small class="text-justify" style="padding-right: 5px; margin-left: -5px;">Punctuality</small>
+                    <div class="progress">
+                        <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center" style="background-color:green;">
+                            <div class="h6 font-weight-bold" style="background-color:green;">95<sup class="small" style="background-color:green;color: white;">%</sup>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <!--ROW 2 Ends-->
+        <br>
+        <!--ROW 3 Begins-->    
+        <div class="row row3 justify-content-between">
+            <div class="col-3 column gone">
+                <img src="picture.jpg" class="img-circle" alt="Cinque Terre" width="100px" height="100px">
+                <h4 class="text-center">David Phillips</h4>
+                <h5 class="text-center">Product Design</h5>
+                <h6 class="text-center">Visual Designer - #001</h6>
+                <div style="float: left;" class="rain">
+                    <small class="text-justify">Attendance</small>
+                    <br>
+                    <strong class="text-center" style="margin-left:20px;">88%</strong>
+                    <br>
+                    <p class="text-center">100 Days</p>
+                </div>
+                <div style="float: right;" class="rain2">
+                    <small class="text-justify" style="padding-right: 5px; margin-left: -5px;">Punctuality</small>
+                    <div class="progress">
+                        <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center" style="background-color:green;">
+                            <div class="h6 font-weight-bold" style="background-color:green;">95<sup class="small" style="background-color:green;color: white;">%</sup>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <div class="col-3 column">
+                <img src="picture.jpg" class="img-circle" alt="Cinque Terre" width="100px" height="100px">
+                <h4 class="text-center">David Phillips</h4>
+                <h5 class="text-center">Product Design</h5>
+                <h6 class="text-center">Visual Designer - #001</h6>
+                <div style="float: left;" class="rain">
+                    <small class="text-justify">Attendance</small>
+                    <br>
+                    <strong class="text-center" style="margin-left:20px;">88%</strong>
+                    <br>
+                    <p class="text-center">100 Days</p>
+                </div>
+                <div style="float: right;" class="rain2">
+                    <small class="text-justify" style="padding-right: 5px; margin-left: -5px;">Punctuality</small>
+                    <div class="progress">
+                        <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center" style="background-color:green;">
+                            <div class="h6 font-weight-bold" style="background-color:green;">95<sup class="small" style="background-color:green;color: white;">%</sup>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <div class="col-3 column">
+                <img src="picture.jpg" class="img-circle" alt="Cinque Terre" width="100px" height="100px">
+                <h4 class="text-center">David Phillips</h4>
+                <h5 class="text-center">Product Design</h5>
+                <h6 class="text-center">Visual Designer - #001</h6>
+                <div style="float: left;" class="rain">
+                    <small class="text-justify">Attendance</small>
+                    <br>
+                    <strong class="text-center" style="margin-left:20px;">88%</strong>
+                    <br>
+                    <p class="text-center">100 Days</p>
+                </div>
+                <div style="float: right;" class="rain2">
+                    <small class="text-justify" style="padding-right: 5px; margin-left: -5px;">Punctuality</small>
+                    <div class="progress">
+                        <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center" style="background-color:green;">
+                            <div class="h6 font-weight-bold" style="background-color:green;">95<sub class="small" style="background-color:green;color: white;">%</sub>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div> 
+    <!--ROW 3 Ends-->       
+    </body>
+</html>
